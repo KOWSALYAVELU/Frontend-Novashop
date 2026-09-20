@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaShop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>NovaShop</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-list"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align:right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+
+        <div class="side-navbar-links">
+             <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+    </div>
+
+    <!--Contact page-->
+    
+    <form class="contact-form" id="contactForm">
+
+    NAME:<input type="text" id="name" placeholder="Name" required>
+
+    EMAIL:<input type="email" id="email" placeholder="Email" required>
+
+    SUBJECT:<input type="text" id="subject" placeholder="Subject" required>
+
+    <textarea id="message" placeholder="Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+    <p id="successMessage"></p>
+
+</form>
+
+    
+
+
+   
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">NovaShop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic officiis, animi dicta quos
+                    dolorum! Quas optio deserunt illum numquam?</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color:white"></i>
+                    <i class="fa-brands fa-whatsapp" style="color:white"></i>
+                    <i class="fa-brands fa-facebook" style="color:white"></i>
+                    <i class="fa-brands fa-twitter" style="color:white"></i>
+
+                </div>
+            </div>
+
+        </div>
+        <p>@2026 NovaShop.com</p>
+    </div>
+
+
+
+    <script src="collection.js"></script>
+</body>
+
+</html>

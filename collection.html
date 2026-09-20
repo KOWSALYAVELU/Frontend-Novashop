@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaShop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>NovaShop</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-list"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align:right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+
+        <div class="side-navbar-links">
+             <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+    </div>
+
+
+    <!--Product-->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="products">
+            <div class="products-box">
+                <img
+                    src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Fashion Dress</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://images.unsplash.com/photo-1678705730064-a7ecbab4b3fb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Sarees</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.shopify.com/s/files/1/0070/8853/7651/files/05002-7656_1_WINE_AddisonGlitterMeshFormalDress_10c76bb7-80ec-4ce5-9097-74dc43477902.webp?v=1744843918&width=886&height=1000">
+                <p>Western Dress</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://images.unsplash.com/photo-1611222777277-61319d63ca94?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Glasses</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://images.unsplash.com/photo-1626895872564-b691b6877b83?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Lipsticks</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://images.unsplash.com/photo-1663010968803-09f5e2dcfc61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Slipper</p>
+            </div>
+
+             <div class="products-box">
+                <img
+                    src="https://www.papilioboutique.com/wp-content/uploads/2023/10/dress-formal-1.jpg">
+                <p>Modules</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://cdn.shopify.com/s/files/1/0083/8644/5369/products/241784448_1734957626701993_564963535851592755_n_2048x.jpg?v=1662618262">
+                <p>Half Sarees</p>
+            </div>
+
+             <div class="products-box">
+                <img
+                    src="https://images.unsplash.com/photo-1682745230951-8a5aa9a474a0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Hand Bags</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://i.pinimg.com/originals/b1/7e/8e/b17e8e32dd2adc1655492fec3e101586.jpg">
+                <p>Bangles</p>
+            </div>
+
+             <div class="products-box">
+                <img
+                    src="https://rukminim2.flixcart.com/image/300/300/xif0q/bangle-bracelet-armlet/s/j/f/free-free-na-4-prpro-pdy01-pr-production-original-imah2u9adux7pefu.jpeg?q=90">
+                <p>Braclets</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Shoes</p>
+            </div>
+
+             <div class="products-box">
+                <img
+                    src="https://imgix.bustle.com/uploads/image/2025/6/5/56629ee8/snapins-ai_3628140224886891688.jpg?w=632&h=790&fit=crop&crop=faces&dpr=2">
+                    <p>Nail Polish</p>
+
+                </div>
+
+            <div class="products-box">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1693221161704-4e4820bc2e28?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Hand Rings</p>
+            </div>
+
+             <div class="products-box">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1675107359685-f268487a3a46?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <p>Earinngs</p>
+            </div>
+
+            <div class="products-box">
+                <img
+                    src="https://i.pinimg.com/originals/c0/77/65/c07765766e7ad9ef2ebdfe7112907c57.jpg">
+                <p>Neck Piece</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">NovaShop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic officiis, animi dicta quos
+                    dolorum! Quas optio deserunt illum numquam?</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color:white"></i>
+                    <i class="fa-brands fa-whatsapp" style="color:white"></i>
+                    <i class="fa-brands fa-facebook" style="color:white"></i>
+                    <i class="fa-brands fa-twitter" style="color:white"></i>
+
+                </div>
+            </div>
+
+        </div>
+        <p>@2026 NovaShop.com</p>
+    </div>
+
+
+
+    <script src="collection.js"></script>
+</body>
+
+</html>
